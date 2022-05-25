@@ -12,6 +12,10 @@ class Form extends React.Component {
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
   }
 
+  componentDidMount(){
+    this.input.focus(); 
+ }
+
   handleFormSubmit(e) {
     e.preventDefault();
   }
