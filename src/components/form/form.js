@@ -4,6 +4,7 @@ import formStyles from './form.module.css';
 class Form extends React.Component {
   constructor(props) {
     super(props);
+    this.inputField = React.createRef();
     this.state = {
       isSubmit: false,
       value: ''
@@ -31,6 +32,7 @@ class Form extends React.Component {
             className={formStyles.input}
             type='email'
             placeholder={'Введите свой e-mail'}
+            ref={this.inputField}
           />
           <button
             className={formStyles.button}
