@@ -14,7 +14,7 @@ class Form extends React.Component {
   }
 
   componentDidMount(){
-    this.inputField.focus(); 
+    this.inputField.current.focus(); 
  }
 
   handleFormSubmit(e) {
